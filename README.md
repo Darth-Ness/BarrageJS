@@ -1,3 +1,4 @@
+params: element
 # BarrageJS
 A JS libary for fast app development
 
@@ -6,5 +7,40 @@ A JS libary for fast app development
 - DOM shortcuts
 - File Management
 - Finally, a proper print for JS
-- Table building
+- Table building (Doesn't have this yet)
 - Reactivity
+
+# Docs
+
+$ : a shortcut for querySelector
+params: element
+
+$$ : a shortcut for querySelectorAll
+params: element
+
+echo : prints a string of text to the screen
+params : text font-size color
+
+saveFile : askes the user to download a file to their device
+params : fileName, content
+
+upload : askes the user to upload a file from their device
+params : none
+
+include : Adds a stylesheet or a JS file to your project
+params : url
+
+cbind : shortcut to the reactivity engine
+params : object element
+
+hide : hides an element
+params : element
+
+show : shows an element
+params : element
+
+execute : executes JS code
+params : code
+
+log : shorthand for console.log()
+params : message
