@@ -90,8 +90,8 @@ function cbind(object, element) {
     var name = varString.slice(2, varString.indexOf(':')-1) 
     new bind({object: object,property: name,element: element,attribute: "innerHTML"})
 }
+function render(data){document.body.insertAdjacentHTML("afterend", data);}
 //Small Functions
 function hide(element){element.style="display:none"}
 function show(element){element.style="display:default"}
-function execute(code) {eval(code)}
 function log(out){console.log(out)}
