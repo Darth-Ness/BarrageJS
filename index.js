@@ -62,34 +62,6 @@ function include(file){
     }
 }
 //UI functions
-//Credit to the author of this fiddle https://jsfiddle.net/m2pozqyy/ for the reactivity engine.
-function bind(b) {
-    _this = this
-    this.element = b.element    
-    this.value = b.object[b.property]
-    this.attribute = b.attribute
-    this.valueGetter = function(){
-        return _this.value;
-    }
-    this.valueSetter = function(val){
-        _this.value = val
-        _this.element[_this.attribute] = val
-    }
-
-    Object.defineProperty(b.object, b.property, {
-        get: this.valueGetter,
-        set: this.valueSetter
-    }); 
-    b.object[b.property] = this.value;
-
-    this.element[this.attribute] = this.value
-
-}
-function cbind(object, element) {
-    var varString = JSON.stringify(object) 
-    var name = varString.slice(2, varString.indexOf(':')-1) 
-    new bind({object: object,property: name,element: element,attribute: "innerHTML"})
-}
 function render(data){document.body.insertAdjacentHTML("afterend", data);}
 //Small Functions
 function hide(element){element.style="display:none"}
