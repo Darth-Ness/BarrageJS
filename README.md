@@ -3,12 +3,10 @@ params: element
 A JS libary for fast app development
 
 # Features
--  Dependency Control
+- Dependency Control
 - DOM shortcuts
 - File Management
-- Finally, a proper print for JS
 - Table building (Doesn't have this yet)
-- Reactivity
 
 # Docs
 
@@ -29,9 +27,6 @@ params : none
 
 include : Adds a stylesheet or a JS file to your project
 params : url
-
-cbind : shortcut to the reactivity engine
-params : object element
 
 hide : hides an element
 params : element
