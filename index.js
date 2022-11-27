@@ -1,12 +1,6 @@
 //Dom Management functions
 var $ = document.querySelector.bind(document)
 var $$ = document.querySelectorAll.bind(document)
-function echo(toPrint, size=16, color="#000") {
-    var element = document.createElement("p");
-    element.setAttribute("style", "font-size:" + size + ";" + "color:" + color);
-    element.innerHTML = toPrint;
-    document.body.appendChild(element);
-}
 //File Management functions
 function saveFile(fileName, content) {
     var download = document.createElement('a');
