@@ -57,6 +57,9 @@ function include(file){
 }
 //UI functions
 function render(data){document.body.insertAdjacentHTML("afterend", data);}
+function component(element, code) {
+    $(element).insertAdjacentHTML("afterend", code);    
+}
 //Small Functions
 function hide(element){element.style="display:none"}
 function show(element){element.style="display:default"}
