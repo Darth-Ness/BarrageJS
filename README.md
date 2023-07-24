@@ -10,10 +10,10 @@ A JS libary for fast app development
 
 # Docs
 
-$ : a shortcut for querySelector
+get : a shortcut for querySelector
 params: element
 
-$$ : a shortcut for querySelectorAll
+getAll : a shortcut for querySelectorAll
 params: element
 
 echo : prints a string of text to the screen
