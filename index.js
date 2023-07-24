@@ -1,6 +1,10 @@
 //Dom Management functions
-var $ = document.querySelector.bind(document)
-var $$ = document.querySelectorAll.bind(document)
+function get(data) {
+    document.querySelector.bind(data)
+}
+function getAll(data) {
+    document.querySelectorAll.bind(data)
+}
 //File Management functions
 function saveFile(fileName, content) {
     var download = document.createElement('a');
